@@ -1,9 +1,9 @@
-import react from "react";
+
 import classes from './RestaurentSummary.module.css'
 
 function RestaurentSummary(){
     return (
-        <react.Fragment>
+        
             <section className={classes.summary}>
              <h2>Delicious Food, Delivered To You</h2>
         <p>
@@ -15,7 +15,7 @@ function RestaurentSummary(){
         of course by experienced chefs!
       </p>
     </section>
-        </react.Fragment>
+       
     )
 }
 export default RestaurentSummary;

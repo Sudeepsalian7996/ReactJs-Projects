@@ -1,3 +1,6 @@
+import MealEachItem from "./MealEachItem";
+import Card from '../UI/Card'
+
 const DUMMY_MEALS = [
     {
       id: 'm1',
@@ -26,13 +29,13 @@ const DUMMY_MEALS = [
   ];
   
 const MealItem=()=>{
-    let meal=DUMMY_MEALS.map(ele=>ele.name)
+    
     return(
-        <section>
+          <Card>
             <ul>
-                {meal}
+                <MealEachItem meals={DUMMY_MEALS}/>
             </ul>
-        </section>
+            </Card>
     )
 }
 export default MealItem;
