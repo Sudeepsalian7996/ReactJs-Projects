@@ -29,11 +29,11 @@ const DUMMY_MEALS = [
   ];
   
 const MealItem=()=>{
-    
+      const meal=DUMMY_MEALS.map((ele)=><MealEachItem meals={ele}/>)
     return(
           <Card>
             <ul>
-                <MealEachItem meals={DUMMY_MEALS}/>
+                {meal}
             </ul>
             </Card>
     )
